@@ -2,6 +2,7 @@
 
 ## What is this project?
 A modern, offline-first personal finance tracker for Android. It helps users log income/expenses, manage budgets, gain insights and predictions, and receive smart reminders — all without relying on cloud AI or internet connectivity. Data is stored locally using SharedPreferences with JSON serialization.
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/e8d828ae-bb51-4130-b32b-6e53eb463d39" />
 
 ## Project Objectives
 - Make expense tracking simple and fast
@@ -45,6 +46,35 @@ A modern, offline-first personal finance tracker for Android. It helps users log
 - Budget Recommendations: 90% of recent average per category (last 3 months)
 - Smart Insights: Month-over-month comparisons and per-category deltas
 - Smart Reminder Prediction: Median of recent intervals, normalized to common periods (weekly/biweekly/28-day/monthly)
+## 📸 Project Screenshots
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/80429253-cc2a-435a-8b3f-6302857ce7ce" width="30%" />
+  <img src="https://github.com/user-attachments/assets/9fdf1fd1-c4a3-4153-ac47-294f9f7dfece" width="30%" />
+  <img src="https://github.com/user-attachments/assets/d3e8005a-e4b6-49ee-83e3-a281d2b8c3e7" width="30%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/79e68cad-21db-4753-88b5-dbe75e79d52d" width="30%" />
+  <img src="https://github.com/user-attachments/assets/3e597600-7740-4b3d-80c3-9fe386a0ffb7" width="30%" />
+  <img src="https://github.com/user-attachments/assets/3a58754c-d962-4ff0-b408-81026d4fdc77" width="30%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/969934d6-9c55-41f8-8318-aed35a8028e0" width="30%" />
+  <img src="https://github.com/user-attachments/assets/6691c577-a532-4cef-8e40-5622936dc110" width="30%" />
+  <img src="https://github.com/user-attachments/assets/bfefb119-eccb-4dc6-98b0-a7162ca92d56" width="30%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/195a76ce-7e6f-48e9-91f1-e11055279551" width="30%" />
+  <img src="https://github.com/user-attachments/assets/b1d36d8a-930a-4702-85f1-b7d47de28761" width="30%" />
+  <img src="https://github.com/user-attachments/assets/5d2307b7-e91c-4708-9dfc-e69bb6cbd0b2" width="30%" />
+</p>
+
+
+
+
 
 ## Tech Stack
 - Language: Java (Android)
