@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    tools:context=".MainActivity">
+
+    <!-- Header Section -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="410dp"
+        android:layout_height="82dp"
+        android:background="@color/light_blue"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_message"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/incomeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Income: Not set"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:theme="?attr/actionBarTheme" />
+
+    </RelativeLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- Quick Action Buttons -->
+            <GridLayout
+                android:id="@+id/quickActionsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="4"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:useDefaultMargins="true">
+
+                <Button
+                    android:id="@+id/addTransactionButton"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="329dp"
+                    android:layout_height="115dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/button_green"
+                    android:text="@string/add_transaction"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/transactionHistoryButton"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="328dp"
+                    android:layout_height="114dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/button_blue"
+                    android:text="@string/transaction_history"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/viewBudgetButton"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="324dp"
+                    android:layout_height="121dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/border_background"
+                    android:text="@string/view_budget"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/reportsButton"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="323dp"
+                    android:layout_height="123dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/button_blue"
+                    android:text="@string/reports"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </GridLayout>
+
+            <!-- Calendar Section -->
+            <LinearLayout
+                android:id="@+id/calendarSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="16dp">
+
+                <CalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:id="@+id/selectedDateText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Selected: "
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/totalSpentText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Spent: $0.00"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/addNoteButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Note"
+                    android:textSize="16sp"
+                    android:background="@drawable/button_home"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="16dp"
+                    android:layout_gravity="center_horizontal"
+                    style="@style/Widget.MaterialComponents.Button" />
+
+                <TextView
+                    android:id="@+id/noteTitleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Note Title: None"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/noteDescriptionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Note Description: None"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="16dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

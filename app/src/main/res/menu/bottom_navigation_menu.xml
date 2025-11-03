@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_calendar"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Calendar" />
+    <item
+        android:id="@+id/navigation_list"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="List" />
+    <item
+        android:id="@+id/navigation_budget"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Budget" />
+</menu>

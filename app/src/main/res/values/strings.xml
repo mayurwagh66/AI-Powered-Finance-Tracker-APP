@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">money</string>
+    <string name="welcome_message">Welcome, %s</string>
+    <string name="income_display">Income: %s</string>
+    <string name="add_transaction"> Add Transaction</string>
+    <string name="transaction_history"> Transaction History</string>
+    <string name="view_budget"> View Budget</string>
+    <string name="reports"> Reports</string>
+    <string name="notifications"> Notifications</string>
+    <string name="calendar"> Calendar</string>
+    <string name="home">Home</string>
+    <string name="transactions">Transactions</string>
+    <string name="budget">Budget</string>
+    <string name="profile">Profile</string>
+    <string name="name_label">Name</string>
+    <string name="currency_label">Currency Preference</string>
+    <string name="income_label">Monthly Income (Optional)</string>
+    <string name="save_button">Save</string>
+    <string name="setup_profile_title">Let\'s Get Started!</string>
+    <string name="setup_profile_subtitle">Tell us a bit about yourself to personalize your finance experience</string>
+    <string name="get_started">Get Started</string>
+    <string name="profile_setup_complete">Profile Setup Complete!</string>
+    <string name="profile_setup_success">Your profile has been saved successfully. Let\'s start managing your finances!</string>
+    <string name="add_transaction_title">Add Transaction</string>
+    <string name="amount_label">Amount</string>
+    <string name="type_label">Type</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="category_label">Category</string>
+    <string name="date_label">Date</string>
+    <string name="payment_method_label">Payment Method</string>
+    <string name="cash">Cash</string>
+    <string name="upi">UPI</string>
+    <string name="card">Card</string>
+    <string name="notes_label">Notes (Optional)</string>
+    <string name="save_transaction">Save Transaction</string>
+    <string name="transaction_saved">Transaction saved successfully!</string>
+    <string name="select_date">Select Date</string>
+    <string-array name="categories">
+        <item>Food</item>
+        <item>Rent</item>
+        <item>Salary</item>
+        <item>Transportation</item>
+        <item>Entertainment</item>
+        <item>Utilities</item>
+        <item>Healthcare</item>
+        <item>Shopping</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="payment_methods">
+        <item>Cash</item>
+        <item>UPI</item>
+        <item>Card</item>
+    </string-array>
+</resources>

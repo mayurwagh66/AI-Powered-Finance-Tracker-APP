@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Android App</string>
+    <string name="finance_assistant_title">Finance Assistant</string>
+    <string name="chat_placeholder">Type your message...</string>
+    <string name="send_button">Send</string>
+    <string name="welcome_message">Welcome to your Finance Assistant! How can I help you today?</string>
+    <string name="error_message">Sorry, I couldn't process your request. Please try again.</string>
+</resources>
